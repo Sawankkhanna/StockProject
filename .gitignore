@@ -1,0 +1,14 @@
+backend/exchange/__pycache__/*
+backend/category/__pycache__/*
+backend/categorywise/__pycache__/*
+backend/exchange/migrations/__pycache__/*
+backend/category/migrations/__pycache__/*
+backend/categorywise/migrations/__pycache__/*
+backend/stock/__pycache__/*
+backend/stock/migrations/__pycache__/*
+backend/tradingtree/__pycache__/*
+backend/tradingtree/.env
+backend/venv/*
+frontend/.angular/*
+frontend/.vscode/*
+frontend/node_modules/*

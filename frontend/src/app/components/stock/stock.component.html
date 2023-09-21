@@ -1,0 +1,33 @@
+<button (click)="showStocks()">Refresh</button>
+<div id="stock-container" *ngFor="let stock of stockList">
+    
+    <div id="percentScreen">
+        <div>
+            <h3>Pre Market Percentage</h3>
+            <h3>{{stock.preMarketChangePercent}}%</h3>
+        </div>
+        <div>
+            <h3>Regular Market Percentage</h3>
+            <h3>{{stock.regularMarketChangePercent}}%</h3>
+        </div>
+        <div>
+            <h3>Post Market Percentage</h3>
+            <h3>{{stock.postMarketChangePercent}}</h3>
+        </div>
+    </div>
+
+    <div id="stockDetail">
+        <h1>{{stock.symbol}}</h1>
+        <h3>{{stock.name}}</h3>
+        <div>
+            
+            <td>{{stock.marketCap}}</td>
+            <td>{{stock.regularMarketPrice}}</td>
+        </div>
+        
+        
+    </div>
+    <button (click)="getInfo(stock.symbol)">Info</button>
+    <button (click)="addWatchlist(stock.symbol)">Add</button>
+    <h4>{{stock.exchange}}</h4>
+</div>

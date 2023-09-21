@@ -1,0 +1,15 @@
+#stock-container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+float: left;
+justify-content: space-between;
+border-radius: 20px;
+width: 100%;
+}
+
+#percentScreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
